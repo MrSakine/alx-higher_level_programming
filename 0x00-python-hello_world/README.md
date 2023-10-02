@@ -10,3 +10,6 @@ The Python code will be saved in the environment variable $PYCODE
 
 # 2-print.py
 Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line
+
+# 3-print_number.py
+print the integer stored in the variable number, followed by Battery street, followed by a new line
