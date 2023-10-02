@@ -22,3 +22,6 @@ print 3 times a string stored in the variable str, followed by its first 9 chara
 
 # 6-concat.py
 print Welcome to Holberton School!
+
+# 7-edges.py
+Copy - Cut - Paste
