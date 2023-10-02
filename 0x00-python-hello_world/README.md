@@ -31,3 +31,6 @@ print object-oriented programming with Python, followed by a new line
 
 # 9-easter_egg.py
 Python script that prints “The Zen of Python”, by TimPeters, followed by a new line
+
+# 10-check_cycle.c, lists.h
+A function in C that checks if a singly linked list has a cycle in it
