@@ -34,3 +34,6 @@ Python script that prints “The Zen of Python”, by TimPeters, followed by a n
 
 # 10-check_cycle.c, lists.h
 A function in C that checks if a singly linked list has a cycle in it
+
+# 100-write.py
+Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line
