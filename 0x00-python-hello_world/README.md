@@ -37,3 +37,6 @@ A function in C that checks if a singly linked list has a cycle in it
 
 # 100-write.py
 Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line
+
+# 101-compile
+script that compiles a Python script file

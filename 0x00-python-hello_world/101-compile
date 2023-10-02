@@ -1,0 +1,2 @@
+#!/bin/bash
+exec touch $(echo $PYFILE | cut -d "." -f 1).pyc | python3 -m py_compile $PYFILE $(pwd)/$(echo $PYFILE | cut -d "." -f 1).pyc
