@@ -40,3 +40,6 @@ Python script that prints exactly and that piece of art is useful - Dora Korpar,
 
 # 101-compile
 script that compiles a Python script file
+
+# 102-magic_calculation.py
+Python function def magic_calculation(a, b): that show bytecode
