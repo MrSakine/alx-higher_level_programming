@@ -25,3 +25,6 @@ print Welcome to Holberton School!
 
 # 7-edges.py
 Copy - Cut - Paste
+
+# 8-concat_edges.py
+print object-oriented programming with Python, followed by a new line
