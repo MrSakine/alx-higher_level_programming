@@ -1,4 +1,5 @@
 #!/bin/bash
 echo "Compiling $PYFILE ..."
 OUTPUT=$(echo $PYFILE | cut -d "." -f 1)
-exec touch $OUTPUT.pyc | python3 -m py_compile $PYFILE $(pwd)/$OUTPUT.pyc
+python3 -m py_compile $PYFILE
+mv __pycache__/*.pyc $OUTPUT.pyc
