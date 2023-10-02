@@ -10,19 +10,19 @@ int check_cycle(listint_t *list)
 	listint_t *head;
 	listint_t *next;
 
+	if (list == NULL)
+		return (0);
+
 	head = list;
 	next = list->next;
 
 	while (next != NULL)
 	{
 		if (next->n == head->n)
-		{
 			return (1);
-		}
 
 		next = next->next;
 	}
 
 	return (0);
 }
-
