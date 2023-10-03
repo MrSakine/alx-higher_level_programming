@@ -47,3 +47,6 @@ prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase
 
 # 101-remove_char_at.py
 function that creates a copy of the string, removing the character at the position n
+
+# 102-magic_calculation.py
+ByteCode -> Python #2 
