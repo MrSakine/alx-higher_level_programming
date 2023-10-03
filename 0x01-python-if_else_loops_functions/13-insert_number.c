@@ -19,7 +19,7 @@ int get_index(listint_t **head, int number)
 	while (tmp != NULL)
 	{
 		if (number < tmp->n)
-			break;
+			return (index);
 		index++;
 		tmp = tmp->next;
 	}
