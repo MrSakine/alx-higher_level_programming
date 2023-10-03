@@ -9,19 +9,12 @@
 int get_index(listint_t **head, int number)
 {
 	int index = 0;
-	listint_t *tmp;
+	listint_t *tmp = *head;
 
-	tmp = malloc(sizeof(listint_t));
-	if (tmp == NULL)
-		return (0);
-
-	tmp = *head;
-	while (tmp != NULL)
+	while (tmp != NULL && number >= tmp->n)
 	{
-		if (number < tmp->n)
-			return (index);
-		index++;
 		tmp = tmp->next;
+		index++;
 	}
 
 	return (index);
@@ -69,4 +62,3 @@ listint_t *insert_node(listint_t **head, int number)
 
 	return (new);
 }
-
