@@ -11,3 +11,6 @@ prints the ASCII alphabet, in lowercase, not followed by a new line
 
 # 3-print_alphabt.py
 prints the ASCII alphabet without q and e, in lowercase, not followed by a new line
+
+# 4-print_hexa.py
+prints all numbers from 0 to 98 in decimal and in hexadecimal
