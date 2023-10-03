@@ -20,3 +20,6 @@ program that prints numbers from 0 to 99
 
 # 6-print_comb3.py
 prints all possible different combinations of two digits
+
+# 7-islower.py
+function that checks for lowercase character
