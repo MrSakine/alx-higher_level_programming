@@ -8,3 +8,6 @@ print the last digit of the number stored in the variable number
 
 # 2-print_alphabet.py
 prints the ASCII alphabet, in lowercase, not followed by a new line
+
+# 3-print_alphabt.py
+prints the ASCII alphabet without q and e, in lowercase, not followed by a new line
