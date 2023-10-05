@@ -17,19 +17,18 @@ if (__name__ == "__main__"):
     a = int(a)
     b = int(b)
 
-    match (operator):
-        case "+":
-            result = add(a, b)
-            print("{0} + {1} = {2}".format(a, b, result))
-        case "-":
-            result = sub(a, b)
-            print("{0} - {1} = {2}".format(a, b, result))
-        case "*":
-            result = mul(a, b)
-            print("{0} * {1} = {2}".format(a, b, result))
-        case "/":
-            result = div(a, b)
-            print("{0} / {1} = {2}".format(a, b, result))
-        case _:
-            print("Unknown operator. Available operators: +, -, * and /")
-            exit(1)
+    if operator == "+":
+        result = add(a, b)
+        print("{0} + {1} = {2}".format(a, b, result))
+    elif operator == "-":
+        result = sub(a, b)
+        print("{0} - {1} = {2}".format(a, b, result))
+    elif operator == "*":
+        result = mul(a, b)
+        print("{0} * {1} = {2}".format(a, b, result))
+    elif operator == "/":
+        result = div(a, b)
+        print("{0} / {1} = {2}".format(a, b, result))
+    else:
+        print("Unknown operator. Available operators: +, -, * and /")
+        exit(1)
