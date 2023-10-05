@@ -9,11 +9,10 @@ def command_line_addition(input: list[str] = []):
             input: list of strings
         Returns: None
     """
-    argc = (len(input) - 1)
-
     if (len(input) <= 1):
         print("0")
     else:
+        argc = (len(input) - 1)
         sumOfNumber: int = 0
         for i in range(1, argc + 1):
             try:
