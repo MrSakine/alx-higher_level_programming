@@ -6,13 +6,14 @@ def command_line_addition(input: list[str] = []):
     """My command line addition function
 
         Args:
-            input: list of strings
+			input: list of strings
         Returns: None
     """
-    if (len(input) <= 1):
+    argc = (len(input) - 1)
+
+    if (argc <= 1):
         print(0)
     else:
-        argc = (len(input) - 1)
         sumOfNumber: int = 0
         for i in range(1, argc + 1):
             try:
