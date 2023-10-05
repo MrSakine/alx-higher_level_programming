@@ -6,7 +6,7 @@ def command_line_addition(input: list[str] = []):
     """My command line addition function
 
         Args:
-			input: list of strings
+                        input: list of strings
         Returns: None
     """
     argc = (len(input) - 1)
