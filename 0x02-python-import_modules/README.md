@@ -26,3 +26,6 @@ prints #pythoniscool, followed by a new line, in the standard output
 
 # 102-magic_calculation.py
 ByteCode -> Python #3 
+
+# 103-fast_alphabet.py
+prints the alphabet in uppercase, followed by a new line
