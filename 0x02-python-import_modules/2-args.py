@@ -2,12 +2,7 @@
 import sys
 
 
-def command_line():
-    """My command line function
-
-        Args: None
-        Returns: None
-        """
+if (__name__ == "__main__"):
     argv = sys.argv
     if (len(argv) <= 1):
         print("0 arguments.")
@@ -18,7 +13,3 @@ def command_line():
 
         for i in range(1, argc + 1):
             print("{0}: {1}".format((i), argv[i]))
-
-
-if (__name__ == "__main__"):
-    command_line()
