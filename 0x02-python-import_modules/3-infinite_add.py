@@ -10,7 +10,7 @@ def command_line_addition(input: list[str] = []):
         Returns: None
     """
     if (len(input) <= 1):
-        print("0")
+        print(0)
     else:
         argc = (len(input) - 1)
         sumOfNumber: int = 0
