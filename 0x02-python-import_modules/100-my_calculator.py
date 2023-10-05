@@ -10,27 +10,27 @@ if (__name__ == "__main__"):
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
 
-    left = argv[argc - 2]
-    right = argv[argc]
+    a = argv[argc - 2]
+    b = argv[argc]
     operator = argv[argc - 1]
-    res = 0
-    left = int(left)
-    right = int(right)
+    result = 0
+    a = int(a)
+    b = int(b)
 
     match (operator):
         case "+":
-            res = add(left, right)
-            print("{0} + {1} = {2}".format(left, right, res))
+            result = add(a, b)
+            print("{0} + {1} = {2}".format(a, b, result))
         case "-":
-            res = sub(left, right)
-            print("{0} - {1} = {2}".format(left, right, res))
+            result = sub(a, b)
+            print("{0} - {1} = {2}".format(a, b, result))
         case "*":
-            res = mul(left, right)
-            print("{0} * {1} = {2}".format(left, right, res))
+            result = mul(a, b)
+            print("{0} * {1} = {2}".format(a, b, result))
         case "/":
-            res = div(left, right)
-            print("{0} / {1} = {2}".format(left, right, res))
+            result = div(a, b)
+            print("{0} / {1} = {2}".format(a, b, result))
         case _:
-            res = -1
+            result = -1
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
