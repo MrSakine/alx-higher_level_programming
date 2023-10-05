@@ -31,6 +31,5 @@ if (__name__ == "__main__"):
             result = div(a, b)
             print("{0} / {1} = {2}".format(a, b, result))
         case _:
-            result = -1
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
