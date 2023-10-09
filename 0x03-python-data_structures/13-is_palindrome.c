@@ -13,7 +13,7 @@ listint_t *reverse_list(listint_t **head)
 	if (*head == NULL)
 		return (NULL);
 
-	while (*head == NULL)
+	while (*head != NULL)
 	{
 		next = (*head)->next;
 		(*head)->next = prev;
@@ -38,7 +38,7 @@ int is_palindrome(listint_t **head)
 	listint_t *reverse = reverse_list(head);
 	int i, len = 0;
 
-	if (*head == NULL)
+	if (head == NULL || *head == NULL)
 		return (1);
 
 	while (copy != NULL)
@@ -58,4 +58,3 @@ int is_palindrome(listint_t **head)
 
 	return (1);
 }
-
