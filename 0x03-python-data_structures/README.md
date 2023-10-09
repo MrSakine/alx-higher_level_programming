@@ -41,3 +41,6 @@ switch value of a and b
 
 # 13-is_palindrome.c, lists.h
 function in C that checks if a singly linked list is a palindrome
+
+# 100-print_python_list_info.c
+function that prints some basic info about Python lists.
