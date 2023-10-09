@@ -38,3 +38,6 @@ function that deletes the item at a specific position in a list
 
 # 12-switch.py
 switch value of a and b
+
+# 13-is_palindrome.c, lists.h
+function in C that checks if a singly linked list is a palindrome
