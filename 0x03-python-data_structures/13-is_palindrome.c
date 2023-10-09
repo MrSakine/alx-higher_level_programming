@@ -29,13 +29,16 @@ int is_palindrome(listint_t **head)
 {
 	listint_t *current;
 	int i, len = 0;
+	int *values;
 
 	if (head == NULL || *head == NULL)
 		return (1);
 
 	current = *head;
 	len = get_length(head);
-	int values[len];
+	values = (int *)malloc(sizeof(int) * len);
+	if (values == NULL)
+		return (0);
 
 	for (i = 0; i < len; i++)
 	{
@@ -48,6 +51,8 @@ int is_palindrome(listint_t **head)
 		if (values[i] != values[len - i - 1])
 			return (0);
 	}
+
+	free(values);
 
 	return (1);
 }
