@@ -1,29 +1,22 @@
 #include "lists.h"
 
 /**
- * reverse_list - reverse structure of a listint_t list
+ * get_length - get the length of listint_t list
  * @head: pointer to pointer of first node of listint_t list
- * Return: address of the new element or NULL if it fails
+ * Return: length of the linked list
  */
-listint_t *reverse_list(listint_t **head)
+int get_length(listint_t **head)
 {
-	listint_t *prev = NULL;
-	listint_t *next;
+	int length = 0;
+	listint_t *current = *head;
 
-	if (*head == NULL)
-		return (NULL);
-
-	while (*head != NULL)
+	while (current != NULL)
 	{
-		next = (*head)->next;
-		(*head)->next = prev;
-		prev = *head;
-		*head = next;
+		current = current->next;
+		length++;
 	}
 
-	*head = prev;
-
-	return (*head);
+	return (length);
 }
 
 /**
@@ -33,27 +26,24 @@ listint_t *reverse_list(listint_t **head)
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *copy = *head;
-	listint_t *current = *head;
-	listint_t *reverse = reverse_list(head);
-	int i, len = 0;
+	listint_t *current;
+	int i, len = get_length(head);
+	int values[len];
 
 	if (head == NULL || *head == NULL)
 		return (1);
 
-	while (copy != NULL)
+	current = *head;
+	for (i = 0; i < len; i++)
 	{
-		len++;
-		copy = copy->next;
+		values[i] = current->n;
+		current = current->next;
 	}
 
-	for (i = 0; i < (len / 2); i++)
+	for (i = 0; i < len / 2; i++)
 	{
-		if (current != reverse)
+		if (values[i] != values[len - i - 1])
 			return (0);
-
-		current = current->next;
-		reverse = reverse->next;
 	}
 
 	return (1);
