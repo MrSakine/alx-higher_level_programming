@@ -8,8 +8,9 @@
 int get_length(listint_t **head)
 {
 	int length = 0;
-	listint_t *current = *head;
+	listint_t *current;
 
+	current = *head;
 	while (current != NULL)
 	{
 		current = current->next;
@@ -27,13 +28,15 @@ int get_length(listint_t **head)
 int is_palindrome(listint_t **head)
 {
 	listint_t *current;
-	int i, len = get_length(head);
-	int values[len];
+	int i, len = 0;
 
 	if (head == NULL || *head == NULL)
 		return (1);
 
 	current = *head;
+	len = get_length(head);
+	int values[len];
+
 	for (i = 0; i < len; i++)
 	{
 		values[i] = current->n;
