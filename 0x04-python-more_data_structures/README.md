@@ -14,3 +14,6 @@ a function that returns a set of common elements in two sets.
 
 # 4-only_diff_elements.py
 a function that returns a set of all elements present in only one set.
+
+# 5-number_keys.py
+a function that returns the number of keys in a dictionary.
