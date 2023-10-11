@@ -8,3 +8,6 @@ a function that replaces all occurrences of an element by another in a new list.
 
 # 2-uniq_add.py
 a function that adds all unique integers in a list (only once for each integer).
+
+# 3-common_elements.py
+a function that returns a set of common elements in two sets.
