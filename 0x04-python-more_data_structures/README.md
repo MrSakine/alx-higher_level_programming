@@ -41,3 +41,6 @@ a function that converts a Roman numeral to an integer.
 
 # 100-weight_average.py
 a function that returns the weighted average of all integers tuple (<score>, <weight>)
+
+# 101-square_matrix_map.py
+function that computes the square value of all integers of a matrix using map
