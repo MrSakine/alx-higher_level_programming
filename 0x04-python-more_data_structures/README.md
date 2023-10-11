@@ -20,3 +20,6 @@ a function that returns the number of keys in a dictionary.
 
 # 6-print_sorted_dictionary.py
 a function that prints a dictionary by ordered keys.
+
+# 7-update_dictionary.py
+a function that replaces or adds key/value in a dictionary.
