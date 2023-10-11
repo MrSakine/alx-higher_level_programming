@@ -38,3 +38,6 @@ a function that returns a list with all values multiplied by a number without us
 
 # 12-roman_to_int.py
 a function that converts a Roman numeral to an integer.
+
+# 100-weight_average.py
+a function that returns the weighted average of all integers tuple (<score>, <weight>)
