@@ -35,3 +35,6 @@ a function that returns a key with the biggest integer value.
 
 # 11-multiply_list_map.py
 a function that returns a list with all values multiplied by a number without using any loops.
+
+# 12-roman_to_int.py
+a function that converts a Roman numeral to an integer.
