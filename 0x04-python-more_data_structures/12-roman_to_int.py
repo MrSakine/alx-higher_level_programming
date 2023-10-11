@@ -8,11 +8,10 @@ def roman_to_int(roman_string):
     i, a, b = 0, 0, 0
     while (i < n):
         currentRomain = list(filter(lambda x: x == roman_string[i], romains))
+        a = romains.get(currentRomain[0])
         if (i + 1 < n):
             nextRomain = list(
                 filter(lambda y: y == roman_string[i + 1], romains))
-
-            a = romains.get(currentRomain[0])
             b = romains.get(nextRomain[0])
 
             if (a >= b):
