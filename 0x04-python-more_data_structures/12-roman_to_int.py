@@ -11,13 +11,14 @@ def roman_to_int(roman_string):
     while (i < n):
         currentRomain = list(filter(lambda x: x == roman_string[i], romains))
         if (len(currentRomain) == 0):
-            return (res)
+            break
         a = romains.get(currentRomain[0])
         if (i + 1 < n):
             nextRomain = list(
                 filter(lambda y: y == roman_string[i + 1], romains))
             if (len(nextRomain) == 0):
-                return (res)
+                res += a
+                break
             b = romains.get(nextRomain[0])
 
             if (a >= b):
