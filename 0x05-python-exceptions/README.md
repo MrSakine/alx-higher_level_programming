@@ -23,3 +23,6 @@ a function that raises a name exception with a message.
 
 # 100-safe_print_integer_err.py
 a function that prints an integer and prints in stderr the error precede by Exception
+
+# 101-safe_function.py
+a function that executes a function safely.
