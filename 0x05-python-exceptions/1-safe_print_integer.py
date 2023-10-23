@@ -3,7 +3,7 @@ def safe_print_integer(value):
     printed = True
     try:
         i = int(value)
-        print("{}".format(i))
+        print("{:d}".format(i))
     except Exception:
         printed = False
     return (printed)
