@@ -2,8 +2,11 @@
 def safe_print_integer(value):
     printed = True
     try:
-        i = int(value)
-        print("{:d}".format(i))
+        if (isinstance(value, int)):
+            i = int(value)
+            print("{:d}".format(i))
+        else:
+            raise Exception()
     except Exception:
         printed = False
     return (printed)
