@@ -20,3 +20,6 @@ a function that raises a type exception.
 
 # 6-raise_exception_msg.py
 a function that raises a name exception with a message.
+
+# 100-safe_print_integer_err.py
+a function that prints an integer and prints in stderr the error precede by Exception
