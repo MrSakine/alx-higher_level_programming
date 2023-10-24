@@ -112,7 +112,7 @@ class SinglyLinkedList:
                 node.next_node = last.next_node
                 last.next_node = node
 
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         """
         String representation of the SinglyLinkedList class instance
 
