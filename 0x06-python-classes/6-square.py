@@ -32,7 +32,7 @@ class Square:
             position (:obj:`tuple` of :obj:`int`, optional) The
                 position of the lines
         """
-        if (type(size) is not int):
+        if (not isinstance(size, int)):
             raise TypeError("size must be an integer")
         elif (size < 0):
             raise ValueError("size must be >= 0")
