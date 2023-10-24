@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """
-An empty class Square that defines a square
+This module demonstrates how to declare an empty class named Square
 """
+
+
 class Square:
     """
     An empty square class definition
