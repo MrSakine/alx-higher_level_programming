@@ -41,7 +41,7 @@ class Square:
             not isinstance(position, tuple)
         ):
             raise TypeError("position must be a tuple of 2 positive integers")
-        elif (not all(isinstance(p, int) for p in tuple(position))):
+        elif (not all(isinstance(p, int) and p > 0 for p in tuple(position))):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__size = size
