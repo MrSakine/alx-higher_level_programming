@@ -55,7 +55,7 @@ class Node:
         """Set a new next node for the current node"""
         self.__init__(self.data, value)
 
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         """
         String representation of the Node class instance
 
