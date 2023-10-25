@@ -26,3 +26,6 @@ a class Node that defines a node of a singly linked and a class SinglyLinkedList
 
 # 101-square.py
 a class Square that defines a square by: (based on 6-square.py)
+
+# 102-square.py
+a class Square that defines a square by: (based on 4-square.py)
