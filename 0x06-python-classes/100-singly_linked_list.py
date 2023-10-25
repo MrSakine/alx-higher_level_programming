@@ -92,19 +92,21 @@ class SinglyLinkedList:
         """
         node = Node(value)
         if (self.__head is None):
-            node.next_node = self.__head
             self.__head = node
         else:
             last = self.__head
             insertAtTop = False
-            while (last.next_node is not None):
-                if (value <= last.data):
+            while (last is not None):
+                if (node.data <= last.data):
                     insertAtTop = True
                     break
-                if (value <= last.next_node.data):
+                elif (last.next_node is None):
+                    break
+                elif (node.data <= last.next_node.data):
                     insertAtTop = False
                     break
-                last = last.next_node
+                else:
+                    last = last.next_node
             if (insertAtTop):
                 node.next_node = last
                 self.__head = node
