@@ -111,13 +111,18 @@ class Square:
         if (self.size == 0):
             return (output)
         else:
-            if (self.position[1] > 0):
+            remain = self.position[1]
+            if (remain > 0):
                 output += "\n"
+                remain -= 1
             for _ in range(self.size):
                 for _ in range(self.position[0]):
                     output += " "
                 for _ in range(self.size):
                     output += "#"
                 output += "\n"
+            while (remain > 0):
+                output += "\n"
+                remain -= 1
             output = output[:len(output) - 1]
             return (output)
