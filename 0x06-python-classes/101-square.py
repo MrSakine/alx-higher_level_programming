@@ -109,7 +109,6 @@ class Square:
         """
         output = ""
         if (self.size == 0):
-            output += "\n"
             return (output)
         else:
             if (self.position[1] > 0):
