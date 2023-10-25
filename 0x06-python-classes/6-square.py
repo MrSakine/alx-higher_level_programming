@@ -87,10 +87,10 @@ class Square:
         Args: None
         Returns: None
         """
-        remain = self.position[1]
         if (self.size == 0):
             print("")
         else:
+            remain = self.position[1]
             if (remain > 0):
                 print("")
                 remain = remain - 1
@@ -100,5 +100,6 @@ class Square:
                 for _ in range(self.size):
                     print("#", end="")
                 print("")
-            if (remain > 0):
+            while (remain > 0):
                 print("")
+                remain -= 1
