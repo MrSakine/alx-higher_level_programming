@@ -7,6 +7,7 @@ This module demonstrates how to
 - calculate the area of the square
 - print the square with the character #
 - using positions to show spaces
+- string representation of the class Square
 """
 
 
