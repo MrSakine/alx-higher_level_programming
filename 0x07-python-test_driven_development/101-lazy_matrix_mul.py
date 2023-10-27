@@ -8,7 +8,7 @@ import numpy as np
 
 def lazy_matrix_mul(m_a, m_b):
     """
-    Print the result of multiplication of 2 matrix
+    Multiplication of 2 matrix through numpy.dot() function
 
     Attributes:
         m_a (any): first matrix
