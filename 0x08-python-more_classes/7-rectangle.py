@@ -73,15 +73,17 @@ class Rectangle:
         return ((self.width + self.height) * 2)
 
     def __str__(self) -> str:
-        """Print the rectangle with the character #"""
+        """Print the rectangle with the print symbol"""
         output = ""
-        character = '#'
         new_line_character = '\n'
+        symbol = (Rectangle.print_symbol
+                  if self.print_symbol is None
+                  else self.print_symbol)
         if (self.width == 0 or self.height == 0):
             return (output)
         for i in range(self.height):
             for _ in range(self.width):
-                output += character
+                output += str(symbol)
             if (i < (self.height - 1)):
                 output += new_line_character
         # output = output[:len(output) - 1]
