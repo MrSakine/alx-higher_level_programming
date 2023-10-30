@@ -69,9 +69,10 @@ class Rectangle:
         new_line_character = '\n'
         if ((self.width or self.height) == 0):
             return (output)
-        for _ in range(self.height):
+        for i in range(self.height):
             for _ in range(self.width):
                 output += character
-            output += new_line_character
-        output = output[:len(output) - 1]
+            if (i < (self.height - 1)):
+                output += new_line_character
+        # output = output[:len(output) - 1]
         return (output)
