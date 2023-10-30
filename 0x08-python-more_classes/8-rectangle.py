@@ -24,7 +24,8 @@ class Rectangle:
         Attributes:
             width (:obj:`str`, optional): The width of the rectangle
             height (:obj:`str`, optional): The height of the rectangle
-            print_symbol (any): symbol for string representation, default to None
+            print_symbol (any): symbol for string representation,
+            default to None
 
         Returns: None
         """
