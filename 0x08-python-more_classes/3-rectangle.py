@@ -73,5 +73,5 @@ class Rectangle:
             for _ in range(self.width):
                 output += character
             output += new_line_character
-        output = output[:len(output) - 1]
+        # output = output[:len(output) - 1]
         return (output)
