@@ -43,7 +43,7 @@ class NQueenPuzzle():
 
 """
 Todo:
-    - throw errors if number isn't an integer
+    - throw errors if number isn't an integer, otherwise
     - get the number through sys module
     - create a new instance of the class NQueenPuzzle
     - print every possible solutions
