@@ -67,7 +67,7 @@ class Rectangle:
         output = ""
         character = '#'
         new_line_character = '\n'
-        if ((self.width or self.height) == 0):
+        if (self.width == 0 or self.height == 0):
             return (output)
         for i in range(self.height):
             for _ in range(self.width):
