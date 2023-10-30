@@ -29,3 +29,6 @@ a class Rectangle that defines a rectangle by: (based on 7-rectangle.py)
 
 # 9-rectangle.py
 a class Rectangle that defines a rectangle by: (based on 8-rectangle.py)
+
+# 101-nqueens.py
+a program that solves the N queens problem
