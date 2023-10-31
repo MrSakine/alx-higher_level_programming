@@ -1,1 +1,5 @@
-0 Because string literals are typically represented as string objects, not integer objects
+262
+In CPython, there is a concept of small integer caching. The integers in the range of -5 to 256 are pre-allocated and cached for performance reasons. These integers are commonly used in Python programs, so they are reused instead of creating new objects every time.
+The NSMALLPOSINTS constant represents the number of pre-allocated positive small integers, which is set to 257 by default. The NSMALLNEGINTS constant represents the number of pre-allocated negative small integers, which is set to -5 by default.
+Since the code does not involve any explicit creation or manipulation of int objects, the pre-allocated small integers are the only int objects in memory before the execution of line 2. Therefore, there are 262 int objects in memory.
+This optimization helps to reduce memory usage and improve performance when working with small integers in Python.
