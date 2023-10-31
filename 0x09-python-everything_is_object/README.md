@@ -167,3 +167,17 @@ Is a a tuple? Answer with Yes or No.
 a = (1)
 Is a a tuple? Answer with Yes or No.
 ```
+
+# 23-answer.txt
+```
+a = (1, )
+Is a a tuple? Answer with Yes or No.
+```
+
+# 24-answer.txt
+```
+What does this script print?
+a = (1)
+b = (1)
+a is b
+```
