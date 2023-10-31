@@ -155,3 +155,15 @@ a function def copy_list(l): that returns a copy of a list
 a = ()
 Is a a tuple? Answer with Yes or No.
 ```
+
+# 21-answer.txt
+```
+a = (1, 2)
+Is a a tuple? Answer with Yes or No.
+```
+
+# 22-answer.txt
+```
+a = (1)
+Is a a tuple? Answer with Yes or No.
+```
