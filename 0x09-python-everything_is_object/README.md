@@ -150,4 +150,8 @@ print(l1)
 # 19-copy_list.py
 a function def copy_list(l): that returns a copy of a list
 
-
+# 20-answer.txt
+```
+a = ()
+Is a a tuple? Answer with Yes or No.
+```
