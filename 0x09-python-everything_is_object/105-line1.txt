@@ -1,0 +1,2 @@
+0
+Because string literals are typically represented as string objects, not integer objects
