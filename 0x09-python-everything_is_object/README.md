@@ -49,3 +49,27 @@ What do these 3 lines print?
 >>> s2 = s1
 >>> print(s1 is s2)
 ```
+
+# 8-answer.txt
+```
+What do these 3 lines print?
+>>> s1 = "Best School"
+>>> s2 = "Best School"
+>>> print(s1 == s2)
+```
+
+# 9-answer.txt
+```
+What do these 3 lines print?
+>>> s1 = "Best School"
+>>> s2 = "Best School"
+>>> print(s1 is s2)
+```
+
+# 10-answer.txt
+```
+What do these 3 lines print?
+>>> l1 = [1, 2, 3]
+>>> l2 = [1, 2, 3] 
+>>> print(l1 == l2)
+```
