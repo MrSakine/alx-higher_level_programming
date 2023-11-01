@@ -59,7 +59,7 @@ def matrix_divided(matrix, div):
         for i in matrix:
             temp = []
             for j in i:
-                n = (j / div)
-                temp.append(float("{:.2f}".format(n)))
+                n = round((j / div), 2)
+                temp.append(n)
             result.append(temp)
         return (result)
