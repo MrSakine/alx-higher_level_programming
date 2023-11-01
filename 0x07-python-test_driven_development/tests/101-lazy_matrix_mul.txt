@@ -44,3 +44,7 @@ ValueError: shapes (2,3) and (2,3) not aligned: 3 (dim 1) != 2 (dim 0)
 Traceback (most recent call last):
 ...
 TypeError: lazy_matrix_mul() missing 1 required positional argument: 'm_a'
+>>> lazy_matrix_mul([[1, 2], [3, 4]])
+Traceback (most recent call last):
+...
+TypeError: lazy_matrix_mul() missing 1 required positional argument: 'm_b'
