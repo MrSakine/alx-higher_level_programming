@@ -57,3 +57,7 @@ TypeError: div must be a number
 Traceback (most recent call last):
 ...
 TypeError: div must be a number
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]])
+Traceback (most recent call last):
+...
+TypeError: div must be a number
