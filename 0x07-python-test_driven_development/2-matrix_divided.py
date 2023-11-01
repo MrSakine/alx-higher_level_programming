@@ -23,8 +23,9 @@ def matrix_divided(matrix, div):
         A new matrix with the members of old ones divided by div argument
     """
     if (
-        not isinstance(matrix, list) or
-        not all([isinstance(row, list) for row in matrix])
+        not isinstance(matrix, list) or matrix == [] or
+        not all([isinstance(row, list) for row in matrix]) or
+        all(row == [] for row in matrix)
     ):
         raise TypeError(
             "matrix must be a matrix (list of lists) of integers/floats")
