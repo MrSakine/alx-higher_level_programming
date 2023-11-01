@@ -1,11 +1,6 @@
 #!/usr/bin/python3
 """
-This module is about to print square from a number
-It will throw some errors if the number isn't
-an integer or a float or is zero
-Use this to run
-print_square = __import__('4-print_square').print_square
-print_square(size)
+This module print the max integer from a list
 """
 
 
