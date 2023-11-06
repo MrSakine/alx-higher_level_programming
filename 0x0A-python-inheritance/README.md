@@ -32,3 +32,6 @@ a class Rectangle that inherits from BaseGeometry (7-base_geometry.py). (task ba
 
 ## 10-square.py
 a class Square that inherits from Rectangle (9-rectangle.py)
+
+## 11-square.py
+a class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py)
