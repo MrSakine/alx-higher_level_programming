@@ -17,3 +17,6 @@ a function that returns True if the object is an instance of a class that inheri
 
 ## 5-base_geometry.py
 an empty class BaseGeometry
+
+## 6-base_geometry.py
+a class BaseGeometry (based on 5-base_geometry.py)
