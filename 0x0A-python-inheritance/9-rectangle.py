@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A class Rectangle that inherits from BaseGeometry (7-base_geometry.py)
+A class Rectangle that inherits from BaseGeometry (9-base_geometry.py)
 """
 
 """
@@ -30,3 +30,15 @@ class Rectangle(BaseGeometry):
 
         self.__height = height
         self.__width = width
+
+    def area(self):
+        """
+        Returns the area of the rectangle
+        """
+        return (self.__width * self.__height)
+
+    def __str__(self):
+        """
+        Returns the string representation of the rectangle
+        """
+        return ("[Rectangle] {:d}/{:d}".format(self.__width, self.__height))
