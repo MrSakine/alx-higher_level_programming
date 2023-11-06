@@ -23,3 +23,6 @@ a class BaseGeometry (based on 5-base_geometry.py)
 
 ## 7-base_geometry.py, tests/7-base_geometry.txt
 a class BaseGeometry (based on 6-base_geometry.py) with its tests (TDD file in tests/7-base_geometry.txt)
+
+## 8-rectangle.py
+a class Rectangle that inherits from BaseGeometry (7-base_geometry.py)
