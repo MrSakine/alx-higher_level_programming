@@ -38,3 +38,6 @@ a class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-
 
 ## 100-my_int.py
 a class MyInt that inherits from int
+
+## 101-add_attribute.py
+a function that adds a new attribute to an object if it’s possible
