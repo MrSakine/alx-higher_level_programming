@@ -21,17 +21,24 @@ def text_indentation(text):
     """
     if (not isinstance(text, str)):
         raise TypeError("text must be a string")
-    c = 0
-    while c < len(text) and text[c] == ' ':
-        c += 1
+    whitespace_count = 0
+    while (
+        whitespace_count < len(text) and
+        text[whitespace_count] == ' '
+    ):
+        whitespace_count += 1
 
-    while c < len(text):
-        print(text[c], end="")
-        if text[c] == "\n" or text[c] in ".?:":
-            if text[c] in ".?:":
+    while whitespace_count < len(text):
+        print(text[whitespace_count], end="")
+        if (
+            text[whitespace_count] == "\n" or text[whitespace_count] in ".?:"
+        ):
+            if text[whitespace_count] in ".?:":
                 print("\n")
-            c += 1
-            while c < len(text) and text[c] == ' ':
-                c += 1
+            whitespace_count += 1
+            while (
+                whitespace_count < len(text) and text[whitespace_count] == ' '
+            ):
+                whitespace_count += 1
             continue
-        c += 1
+        whitespace_count += 1
