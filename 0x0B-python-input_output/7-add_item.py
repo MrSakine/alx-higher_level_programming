@@ -21,12 +21,13 @@ filename = "add_item.json"
 If no argument provided, fill the file with an empty list
 Otherwise, add the provided arguments to the list in the file
 """
-if (len(sys.argv) == 1):
-    save_to_json_file([], filename)
-else:
-    for i in range(1, len(sys.argv)):
-        data = sys.argv[i]
-        items = load_from_json_file(filename)
-        items = list(items)
-        items.append(data)
-        save_to_json_file(items, filename)
+if __name__ == "__main__":
+    if (len(sys.argv) == 1):
+        save_to_json_file([], filename)
+    else:
+        for i in range(1, len(sys.argv)):
+            data = sys.argv[i]
+            items = load_from_json_file(filename)
+            items = list(items)
+            items.append(data)
+            save_to_json_file(items, filename)
