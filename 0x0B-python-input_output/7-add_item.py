@@ -18,12 +18,10 @@ if __name__ == "__main__":
     Save json data filename
     """
     filename = "add_item.json"
-    if (len(sys.argv) == 1):
-        save_to_json_file([], filename)
-    else:
-        for i in range(1, len(sys.argv)):
-            data = sys.argv[i]
-            items = load_from_json_file(filename)
-            items = list(items)
-            items.append(data)
-            save_to_json_file(items, filename)
+    items = []
+    try:
+        items = load_from_json_file(filename)
+    except FileNotFoundError:
+        items = []
+    items.extend(sys.argv[1:])
+    save_to_json_file(items, filename)
