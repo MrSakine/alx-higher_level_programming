@@ -38,5 +38,5 @@ class Student():
         Attributes:
             json (any): the dictionary that have new values
         """
-        object = dict(json)
-        self.__dict__ = object
+        for k, v in json.items():
+            setattr(self, k, v)
