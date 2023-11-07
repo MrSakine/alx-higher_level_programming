@@ -27,4 +27,6 @@ class Student():
         temp = dict(self.__getattribute__("__dict__"))
         if (attrs is None):
             return (temp)
-        return (dict([(attr, temp.get(attr)) for attr in attrs if temp.get(attr)]))
+        return (dict(
+            [(attr, temp.get(attr)) for attr in attrs if temp.get(attr)]
+        ))
