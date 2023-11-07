@@ -36,7 +36,7 @@ class Student():
         Replaces all attributes of the Student instance
 
         Attributes:
-            json (any): the dictionary that have new values 
+            json (any): the dictionary that have new values
         """
         object = dict(json)
         self.__dict__ = object
