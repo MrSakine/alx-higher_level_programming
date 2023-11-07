@@ -12,4 +12,4 @@ def read_file(filename=""):
     filename (:obj:`str`, optional): name of the file
     """
     with open(file=filename, encoding="utf-8") as file:
-        print(file.read())
+        print(file.read(), end="")
