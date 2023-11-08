@@ -20,11 +20,14 @@ if __name__ == "__main__":
     try:
         for line in sys.stdin:
             inputs = line.split()
-            if (len(inputs) >= 9):
-                file_size = inputs[-1]
-                status_code = inputs[-2]
-                totalFileSize += int(file_size)
-                default_status_codes[int(status_code)] += 1
+            if (len(inputs) >= 7):
+                try:
+                    file_size = inputs[-1]
+                    status_code = inputs[-2]
+                    totalFileSize += int(file_size)
+                    default_status_codes[int(status_code)] += 1
+                except ValueError:
+                    counter -= 1
             if (counter % 10 == 0):
                 print("File size: {:d}".format(totalFileSize))
                 for code in sorted(default_status_codes.keys()):
