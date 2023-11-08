@@ -29,8 +29,8 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         pass
 
-print("File size: {:d}".format(sum(file_sizes)))
-for code in sorted(default_status_codes):
-    code_total = sum([1 for i in status_codes if i == code])
-    if (code_total > 0):
-        print("{}: {:d}".format(str(code), code_total))
+    print("File size: {:d}".format(sum(file_sizes)))
+    for code in sorted(default_status_codes):
+        code_total = sum([1 for i in status_codes if i == code])
+        if (code_total > 0):
+            print("{}: {:d}".format(str(code), code_total))
