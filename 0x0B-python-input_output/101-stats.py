@@ -5,32 +5,38 @@ A script that reads stdin line by line and computes metrics
 import sys
 
 if __name__ == "__main__":
-    file_sizes = []
-    status_codes = []
-    default_status_codes = [200, 301, 400, 401, 403, 404, 405, 500]
-    lines = []
+    default_status_codes = {
+        200: 0,
+        301: 0,
+        400: 0,
+        401: 0,
+        403: 0,
+        404: 0,
+        405: 0,
+        500: 0,
+    }
     counter = 1
+    totalFileSize = 0
     try:
         for line in sys.stdin:
+            line = line.rstrip("\n")
             inputs = line.split()
-            if (len(inputs) >= 9):
-                file_size = inputs[-1]
-                status_code = inputs[-2]
-                file_sizes.append(int(file_size))
-                status_codes.append(int(status_code))
-                counter += 1
-
-            if ((counter % 10) == 0):
-                print("File size: {:d}".format(sum(file_sizes)))
-                for code in sorted(default_status_codes):
-                    code_total = sum([1 for i in status_codes if i == code])
-                    if (code_total > 0):
-                        print("{}: {:d}".format(str(code), code_total))
+            file_size = inputs[-1].strip()
+            status_code = inputs[-2].strip()
+            totalFileSize += int(file_size)
+            default_status_codes[int(status_code)] += 1
+            if (counter == 10):
+                print("File size: {:d}".format(totalFileSize))
+                for code in sorted(default_status_codes.keys()):
+                    if (default_status_codes[code] > 0):
+                        print("{}: {:d}".format(
+                            str(code), default_status_codes[code]))
+                counter = 1
+            counter += 1
     except KeyboardInterrupt:
         pass
 
-    print("File size: {:d}".format(sum(file_sizes)))
-    for code in sorted(default_status_codes):
-        code_total = sum([1 for i in status_codes if i == code])
-        if (code_total > 0):
-            print("{}: {:d}".format(str(code), code_total))
+    print("File size: {:d}".format(totalFileSize))
+    for code in sorted(default_status_codes.keys()):
+        if (default_status_codes[code] > 0):
+            print("{}: {:d}".format(str(code), default_status_codes[code]))
