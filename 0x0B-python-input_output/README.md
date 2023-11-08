@@ -41,3 +41,6 @@ a function that returns a list of lists of integers representing the Pascal’s 
 
 ## 100-append_after.py
 a function that inserts a line of text to a file, after each line containing a specific string
+
+## 101-stats.py
+a script that reads stdin line by line and computes metrics
