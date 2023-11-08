@@ -19,19 +19,17 @@ if __name__ == "__main__":
     totalFileSize = 0
     try:
         for line in sys.stdin:
-            line = line.rstrip("\n")
             inputs = line.split()
-            file_size = inputs[-1].strip()
-            status_code = inputs[-2].strip()
+            file_size = inputs[-1]
+            status_code = inputs[-2]
             totalFileSize += int(file_size)
             default_status_codes[int(status_code)] += 1
-            if (counter == 10):
+            if (counter % 10 == 0):
                 print("File size: {:d}".format(totalFileSize))
                 for code in sorted(default_status_codes.keys()):
                     if (default_status_codes[code] > 0):
                         print("{}: {:d}".format(
                             str(code), default_status_codes[code]))
-                counter = 1
             counter += 1
     except KeyboardInterrupt:
         pass
