@@ -31,6 +31,9 @@ class Base():
         """
         A static method to convert a list of dictionnaries to
         json representation
+
+        Returns:
+            A new string that represents the JSON structure
         """
         if (list_dictionaries is None or len(list_dictionaries) <= 0):
             return ("[]")
@@ -39,6 +42,9 @@ class Base():
     def from_json_string(json_string):
         """
         Convert a JSON representation to JSON object
+
+        Returns:
+            A new string that represents the JSON structure in Python world
         """
         if (json_string is None):
             return ([])
@@ -62,6 +68,9 @@ class Base():
     def create(cls, **dictionary):
         """
         Create a new instance from a dictionnary
+
+        Returns:
+            The newly created instance of the class
         """
         dummy = (1, 1)
         instance = cls(*dummy)
@@ -73,6 +82,10 @@ class Base():
         """
         Load a list of instances of the class from a file
         named by the class name (<name>.json)
+
+        Returns:
+        - Empty list if the file is not found
+        - Otherwise, a list of instances of the class
         """
         name = "{}.json".format(cls.__name__)
         data = ""
