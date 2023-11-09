@@ -8,7 +8,6 @@ from models.base import Base
 class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Class constructor:
         - Call the super class with id - this super call with
         use the logic of the __init__ of the Base class
         - Assign each argument width, height, x and y to the right attribute
