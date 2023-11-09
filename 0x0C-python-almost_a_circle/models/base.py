@@ -65,6 +65,27 @@ class Base():
             file.write(Base.to_json_string(items))
 
     @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """
+        Save a list of objects to a file as csv representation
+        """
+        items = []
+        name = "{}.csv".format(cls.__name__)
+        if (list_objs is not None):
+            for item in list_objs:
+                temp = []
+                for _, j in item.to_dictionary().items():
+                    temp.append(str(j))
+                items.append(",".join(temp))
+
+        with open(file=name, mode="w", encoding="utf-8") as file:
+            if (len(items) == 0):
+                file.write("[]")
+            else:
+                for item in items:
+                    print(item, file=file)
+
+    @classmethod
     def create(cls, **dictionary):
         """
         Create a new instance from a dictionnary
@@ -93,5 +114,38 @@ class Base():
             with open(file=name, encoding="utf-8") as file:
                 data = file.read()
             return [cls.create(**d) for d in cls.from_json_string(data)]
+        except FileNotFoundError:
+            return ([])
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """
+        Load a list of instances of the class from a file
+        named by the class name (<name>.csv)
+
+        Returns:
+        - Empty list if the file is not found
+        - Otherwise, a list of instances of the class
+        """
+        name = "{}.csv".format(cls.__name__)
+        data = ""
+        attrs = []
+        results = []
+        try:
+            with open(file=name, encoding="utf-8") as file:
+                data = file.readlines()
+            for i in data:
+                temp = i.split(",")
+                if len(temp) == 4:
+                    attrs = ["id", "size", "x", "y"]
+                else:
+                    attrs = ["id", "width", "height", "x", "y"]
+                j = 0
+                response = {}
+                for k in i.split(","):
+                    response[attrs[j]] = int(k)
+                    j += 1
+                results.append(response)
+            return [cls.create(**result) for result in results]
         except FileNotFoundError:
             return ([])
