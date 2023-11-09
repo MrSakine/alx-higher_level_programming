@@ -3,6 +3,7 @@
 Base class module, this class is used by the other ones as parent
 """
 import json
+import turtle
 
 
 class Base():
@@ -149,3 +150,32 @@ class Base():
             return [cls.create(**result) for result in results]
         except FileNotFoundError:
             return ([])
+
+    def draw(list_rectangles, list_squares):
+        """
+        Draw rectangle or square from turtle module
+
+        Attributes:
+            list_rectangles (any): list of rectangles instances
+            list_squares (any): list of squares instance
+        """
+        drawer = turtle.Turtle()
+        for rectangle in list_rectangles:
+            drawer.penup()
+            drawer.goto(rectangle.x, rectangle.y)
+            drawer.pendown()
+            for _ in range(2):
+                drawer.forward(rectangle.width)
+                drawer.left(90)
+                drawer.forward(rectangle.height)
+                drawer.left(90)
+        for square in list_squares:
+            drawer.penup()
+            drawer.goto(square.x, square.y)
+            drawer.pendown()
+            for _ in range(2):
+                drawer.forward(square.width)
+                drawer.left(90)
+                drawer.forward(square.height)
+                drawer.left(90)
+        turtle.exitonclick()
