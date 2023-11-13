@@ -6,6 +6,10 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
+    """
+    Square class definition
+    """
+
     def __init__(self, size, x=0, y=0, id=None):
         """
         Call the super class with id, x, y, width and height.
