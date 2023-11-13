@@ -6,6 +6,9 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """
+    Rectangle class definition
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         - Call the super class with id - this super call with
