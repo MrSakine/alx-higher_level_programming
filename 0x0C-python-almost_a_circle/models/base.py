@@ -94,7 +94,7 @@ class Base():
         Returns:
             The newly created instance of the class
         """
-        dummy = (1, 1)
+        dummy = (1, 1) if cls.__name__ == "Rectangle" else (1,)
         instance = cls(*dummy)
         cls.update(instance, **dictionary)
         return (instance)
