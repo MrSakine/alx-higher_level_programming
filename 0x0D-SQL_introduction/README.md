@@ -32,3 +32,7 @@ Deletes the database hbtn_0c_0 in your MySQL server
 
 Lists all the tables of a database in your MySQL server
 
+### 4-first_table.sql
+
+Creates a table called first_table in the current database in your MySQL server
+
