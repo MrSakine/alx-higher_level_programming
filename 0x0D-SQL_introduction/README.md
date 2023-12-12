@@ -44,4 +44,7 @@ Prints the full description of the table first_table from the database hbtn_0c_0
 
 Lists all rows of the table first_table from the database hbtn_0c_0 in your MySQL server
 
+## 7-insert_value.sql
+
+Inserts a new row in the table first_table (database hbtn_0c_0) in your MySQL server
 
