@@ -48,3 +48,7 @@ Lists all rows of the table first_table from the database hbtn_0c_0 in your MySQ
 
 Inserts a new row in the table first_table (database hbtn_0c_0) in your MySQL server
 
+### 8-count_89.sql
+
+Displays the number of records with id = 89 in the table first_table of the database hbtn_0c_0 in your MySQL server
+
