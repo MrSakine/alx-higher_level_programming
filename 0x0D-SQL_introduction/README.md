@@ -72,3 +72,7 @@ Updates the score of Bob to 10 in the table second_table
 
 Removes all records with a score <= 5 in the table second_table of the database hbtn_0c_0 in your MySQL server
 
+### 14-average.sql
+
+Computes the score average of all records in the table second_table of the database hbtn_0c_0 in your MySQL server
+
