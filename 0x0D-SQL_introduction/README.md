@@ -88,3 +88,7 @@ Lists all records of the table second_table of the database hbtn_0c_0 in your My
 
 Converts hbtn_0c_0 database to UTF8 (utf8mb4, collate utf8mb4_unicode_ci) in your MySQL server
 
+### 101-avg_temperatures.sql
+
+Displays the average temperature (Fahrenheit) by city ordered by temperature (descending)
+
