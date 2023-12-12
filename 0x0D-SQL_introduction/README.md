@@ -36,3 +36,7 @@ Lists all the tables of a database in your MySQL server
 
 Creates a table called first_table in the current database in your MySQL server
 
+### 5-full_table.sql
+
+Prints the full description of the table first_table from the database hbtn_0c_0 in your MySQL server
+
