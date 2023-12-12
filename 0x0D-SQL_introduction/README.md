@@ -52,3 +52,7 @@ Inserts a new row in the table first_table (database hbtn_0c_0) in your MySQL se
 
 Displays the number of records with id = 89 in the table first_table of the database hbtn_0c_0 in your MySQL server
 
+### 9-full_creation.sql
+
+Creates a table second_table in the database hbtn_0c_0 in your MySQL server and add multiples rows
+
