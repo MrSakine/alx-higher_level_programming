@@ -64,3 +64,7 @@ Lists all records of the table second_table of the database hbtn_0c_0 in your My
 
 Lists all records with a score >= 10 in the table second_table of the database hbtn_0c_0 in your MySQL server
 
+### 12-no_cheating.sql
+
+Updates the score of Bob to 10 in the table second_table
+
