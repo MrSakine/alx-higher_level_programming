@@ -60,3 +60,7 @@ Creates a table second_table in the database hbtn_0c_0 in your MySQL server and 
 
 Lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server
 
+### 11-best_score.sql
+
+Lists all records with a score >= 10 in the table second_table of the database hbtn_0c_0 in your MySQL server
+
