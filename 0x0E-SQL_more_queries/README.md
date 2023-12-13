@@ -81,3 +81,19 @@ Lists all Comedy shows in the database hbtn_0d_tvshows
 
 Lists all shows, and all genres linked to that show, from the database hbtn_0d_tvshows
 
+### 100-not_my_genres.sql
+
+Uses the hbtn_0d_tvshows database to list all genres not linked to the show Dexter
+
+### 101-not_a_comedy.sql
+
+Lists all shows without the genre Comedy in the database hbtn_0d_tvshows
+
+### 102-rating_shows.sql
+
+Lists all shows from hbtn_0d_tvshows_rate by their rating
+
+### 103-rating_genres.sql
+
+Lists all genres in the database hbtn_0d_tvshows_rate by their rating
+
