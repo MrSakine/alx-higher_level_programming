@@ -1,5 +1,5 @@
 #!/usr/bin/node
-function arrayMax(arr) {
+function arrayMax (arr) {
   let len = arr.length;
   let max = arr[0];
   while (len--) {
@@ -10,7 +10,7 @@ function arrayMax(arr) {
   return max;
 }
 
-function secondBiggest(array, m, n) {
+function secondBiggest (array, m, n) {
   if (array.length === 0) {
     return (0);
   } else if (m !== n && m !== 0) {
