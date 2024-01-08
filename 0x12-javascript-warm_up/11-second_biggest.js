@@ -1,19 +1,19 @@
 #!/usr/bin/node
-function arrayMax (arr) {
+function arrayMax(arr) {
   let len = arr.length;
   let max = arr[0];
   while (len--) {
-    if (arr[len] > max) {
+    if (parseFloat(arr[len]) > parseFloat(max)) {
       max = arr[len];
     }
   }
   return max;
 }
 
-function secondBiggest (array, m, n) {
+function secondBiggest(array, m, n) {
   if (array.length === 0) {
     return (0);
-  } else if (m !== n) {
+  } else if (m !== n && m !== 0) {
     return (n);
   } else {
     m = arrayMax(array);
