@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This module is about listing all states from the database hbtn_0e_0_usa
+This module is about listing all states with a name starting
+with N (upper N) from the database hbtn_0e_0_usa
 """
 import sys
 import MySQLdb
@@ -18,7 +19,8 @@ if __name__ == "__main__":
         cur = db.cursor()
         cur.execute("SELECT * FROM states ORDER BY states.id ASC")
         for data in cur.fetchall():
-            print(data)
+            if (str(data[1]).startswith('N')):
+                print(data)
         cur.close()
         db.close()
 
