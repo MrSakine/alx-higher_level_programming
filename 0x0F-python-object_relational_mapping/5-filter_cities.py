@@ -25,7 +25,7 @@ if __name__ == "__main__":
         SELECT * FROM cities
         INNER JOIN states
         ON cities.state_id = states.id
-        WHERE states.name='{}' ORDER BY states.id ASC""".format(
+        WHERE states.name='{}' ORDER BY cities.id ASC""".format(
             name)
     )
     data = cur.fetchall()
