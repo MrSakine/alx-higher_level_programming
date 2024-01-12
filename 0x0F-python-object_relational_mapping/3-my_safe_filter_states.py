@@ -20,10 +20,13 @@ if __name__ == "__main__":
     name = (
         args[3][:args[3].find(";")].strip("'") if ";" in args[3] else args[3]
     )
-    cur.execute(
-        "SELECT * FROM states WHERE name='{}' ORDER BY id ASC".format(
-            name)
-    )
-    print(cur.fetchone())
+    query = """
+    SELECT * FROM states
+    WHERE BINARY `name`='{name}'
+    ORDER BY id ASC
+    """
+    cur.execute(query.format(query=args[3]))
+    for data in cur.fetchall():
+        print(data)
     cur.close()
     db.close()
