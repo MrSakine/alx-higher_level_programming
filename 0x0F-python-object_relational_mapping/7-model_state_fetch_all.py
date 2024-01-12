@@ -19,4 +19,3 @@ if __name__ == "__main__":
     data = session.query(State).all()
     for i in data:
         print(str(i.id) + ": " + i.name)
-
