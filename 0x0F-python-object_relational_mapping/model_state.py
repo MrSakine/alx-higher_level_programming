@@ -10,7 +10,14 @@ Base = declarative_base()
 
 
 class State(Base):
+    """
+    State ORM definition
+
+    Attributes:
+        - __tablename__ => the name of the table
+        - id => the ID of the table columns
+        - name => the name of the table colums
+    """
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String(128), nullable=False)
-
