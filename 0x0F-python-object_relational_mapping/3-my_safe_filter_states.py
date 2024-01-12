@@ -25,7 +25,7 @@ if __name__ == "__main__":
     WHERE BINARY `name`='{name}'
     ORDER BY id ASC
     """
-    cur.execute(query.format(query=args[3]))
+    cur.execute(query.format(name=name))
     for data in cur.fetchall():
         print(data)
     cur.close()
