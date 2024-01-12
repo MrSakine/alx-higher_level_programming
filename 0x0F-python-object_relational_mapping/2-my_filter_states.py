@@ -16,7 +16,11 @@ if __name__ == "__main__":
         database=args[2]
     )
     cur = db.cursor()
-    query = "SELECT * FROM states WHERE name='{query}' ORDER BY id ASC"
+    query = """
+    SELECT * FROM states
+    WHERE BINARY `name`='{query}'
+    ORDER BY id ASC
+    """
     cur.execute(query.format(query=args[3]))
     for data in cur.fetchall():
         print(data)
