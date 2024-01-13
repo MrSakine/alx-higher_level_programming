@@ -19,12 +19,11 @@ class State(Base):
         - id => the ID of the table columns
         - name => the name of the table colums
     """
-    __tablename__ = 'states'
+    __tablename__ = "states"
     id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String(128), nullable=False)
     cities = relationship(
         "City",
-        back_populates="state",
-        cascade="all, delete",
-        passive_deletes=True
+        backref="state",
+        cascade="all, delete"
     )
