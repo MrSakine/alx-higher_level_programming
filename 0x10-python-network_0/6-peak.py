@@ -20,9 +20,10 @@ def find_peak_util(list_of_integers, start, end, size):
         left = list_of_integers[mid - 1]
         right = list_of_integers[mid + 1]
 
-        if (mid == 0 or left <= current and current >= right):
+        if ((mid == 0 or left <= current) and
+                (mid == size - 1 or right <= current)):
             return current
-
-        if left > current:
+        elif left > current:
             return find_peak_util(list_of_integers, start, mid - 1, size)
-        return find_peak_util(list_of_integers, mid + 1, end, size)
+        else:
+            return find_peak_util(list_of_integers, mid + 1, end, size)
