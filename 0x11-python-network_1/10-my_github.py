@@ -14,4 +14,7 @@ if __name__ == "__main__":
     }
     req = requests.get(url="https://api.github.com/user", headers=headers)
     response = req.json()
-    print(response["id"])
+    try:
+        print(response["id"])
+    except KeyError:
+        print(None)
