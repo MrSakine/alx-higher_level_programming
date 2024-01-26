@@ -9,7 +9,7 @@ import requests
 if __name__ == "__main__":
     req = requests.post(
         url="http://0.0.0.0:5000/search_user",
-        params={"q": sys.argv[1] if len(sys.argv) == 2 else ""}
+        data={"q": sys.argv[1] if len(sys.argv) == 2 else ""}
     )
     try:
         response = req.json()
