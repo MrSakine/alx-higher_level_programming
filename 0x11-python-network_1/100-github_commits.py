@@ -8,8 +8,8 @@ import requests
 
 if __name__ == "__main__":
     url = "https://api.github.com/repos/$1/$2/commits"
-    url = url.replace("$1", sys.argv[1])
-    url = url.replace("$2", sys.argv[2])
+    url = url.replace("$1", sys.argv[2])
+    url = url.replace("$2", sys.argv[1])
     req = requests.get(url)
     responses = req.json()
     for response in responses[:10]:
