@@ -11,5 +11,5 @@ if __name__ == "__main__":
     try:
         req = requests.get(url=sys.argv[1], allow_redirects=True)
         print(req.text)
-    except requests.exceptions.HTTPError as e:
+    except requests.exceptions.RequestException as e:
         print("Error code: {}".format(e.response.status_code))
