@@ -9,12 +9,11 @@ import requests
 if __name__ == "__main__":
     req = requests.post(
         url="http://0.0.0.0:5000/search_user",
-        allow_redirects=True,
         params={"q": sys.argv[1] if len(sys.argv) == 2 else ""}
     )
     try:
         response = req.json()
-        if response == {}:
+        if not response:
             print("No result")
         else:
             print("[{0}] {1}".format(response.get("id"), response.get("name")))
