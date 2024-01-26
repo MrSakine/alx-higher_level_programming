@@ -5,11 +5,10 @@ sends a request to the URL and displays the body of the response
 """
 import sys
 import requests
-import requests.exceptions
 
 if __name__ == "__main__":
-    try:
-        req = requests.get(url=sys.argv[1], allow_redirects=True)
+    req = requests.get(url=sys.argv[1], allow_redirects=True)
+    if (req.status_code == 200):
         print(req.text)
-    except requests.exceptions.RequestException as e:
-        print("Error code: {}".format(e.response.status_code))
+    else:
+        print("Error code: {}".format(req.status_code))
