@@ -9,7 +9,7 @@ $(function () {
   });
 
   remove.on('click', function () {
-    $('ul li:last-child').remove();
+    lists.children().last().remove();
   });
 
   clear.on('click', function () {
